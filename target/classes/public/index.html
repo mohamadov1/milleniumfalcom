@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Millennium Falcon</title>
+    <link rel="stylesheet" href="millenniumstyle.css">
+    <!-- Add Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Star Wars</h2>
+                    <h5 class="card-subtitle mb-4 text-center">Upload empire.json</h5>
+
+                    <form id="form" onsubmit="return false">
+                        <div class="custom-file mb-3">
+                            <input type="file" class="custom-file-input" id="file" accept=".json" required>
+                            <label class="custom-file-label" for="file">Choose file</label>
+                        </div>
+
+                        <button type="button" class="btn btn-primary btn-block" onclick="setAction()">Upload</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Your Results</h5>
+                    <div id="myResults" class="res"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
